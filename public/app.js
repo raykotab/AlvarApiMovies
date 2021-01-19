@@ -12,7 +12,6 @@ function showData() {
             // console.log(pelicula);
              seccionPelicula.innerHTML += `
              <div class-"pelicula">
-           
                <span id="title">` + pelicula.nombre + `</span>
                <span id="director">` + pelicula.director + `</span>
                <span id="genre">` + pelicula.genre + `</span>
@@ -20,7 +19,6 @@ function showData() {
                <button>Delete</button>
                </div>
                `;
-             
         }); 
     });
 }
