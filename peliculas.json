@@ -4,46 +4,79 @@
       "id": 4,
       "nombre": "300",
       "director": "Zack Snyder",
-      "clasificacion": "Acción"
+      "clasificacion": "Acción",
+      "poster": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/wb-047194-Full-Image_GalleryBackground-en-US-1483993558755._RI_.jpg"
     },
     {
       "id": 5,
       "nombre": "El silencio de los corderos",
       "director": "Jonathan Demme",
-      "clasificacion": "Drama"
+      "clasificacion": "Drama",
+      "poster": "https://ep00.epimg.net/elpais/imagenes/2017/04/26/album/1493221092_629195_1493221368_album_normal.jpg"
     },
     {
       "id": 6,
       "nombre": "Forrest Gump",
       "director": "Robert Zemeckis",
-      "clasificacion": "Comedia"
+      "clasificacion": "Comedia",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGGFOeDrfCw6gCkuq8OJrQkMQAMQarAZbkQ&usqp=CAU"
     },
     {
       "id": 7,
       "nombre": "Las Hurdes",
       "director": "Luis Buñuel",
-      "clasificacion": "Documental"
+      "clasificacion": "Documental",
+      "poster": "https://static.elcorreo.com/www/multimedia/201904/04/media/cortadas/lashurdes2-kvlB-U701092459809bcF-624x385@RC.jpg"
     },
     {
-      "id": 8
+      "id": 8,
+      "nombre": "Down by Law",
+      "director": "Jim Jarmush",
+      "clasificacion": "Comedia",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpyG8ZvUc_c_f3J1M6I0VRfvKJ8dN3J-lqg&usqp=CAU"
     },
     {
       "nombre": "El sexto sentido",
       "director": "M. Night Shyamalan",
       "clasificacion": "Drama",
+      "poster": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.filmaffinity.com%2Fes%2Ffilm607127.html&psig=AOvVaw0sYZISVnIG73WcR7ho_d6n&ust=1612201842459000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCRsYLexu4CFQAAAAAdAAAAABAE",
       "id": 9
     },
     {
       "nombre": "Sagan",
       "director": "M. Night Shyamalan",
       "clasificacion": "Drama",
+      "poster": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.filmaffinity.com%2Fes%2Ffilm734776.html&psig=AOvVaw1I08Nzu2kEA1zR1vqtEGsx&ust=1612201936743000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDas6_exu4CFQAAAAAdAAAAABAE",
       "id": 10
     },
     {
       "nombre": "Batman",
       "director": "M. Night Shyamalan",
       "clasificacion": "Drama",
+      "poster": "https://i.pinimg.com/474x/9b/3d/d7/9b3dd7fb3d130d64796321dc7ab47ce2.jpg",
       "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13,
+      "nombre": "Star Wars",
+      "director": "George Lucas",
+      "clasificacion": "Sci-Fi"
+    },
+    {
+      "id": 1,
+      "nombre": "Golpe en la pequeña china",
+      "director": "John Carpenter",
+      "clasificacion": "Acción",
+      "poster": "https://image.posterlounge.com/img/products/520000/516275/516275_poster_l.jpg"
+    },
+    {
+      "nombre": "Golpe en la pequeña china",
+      "director": "John Carpenter",
+      "clasificacion": "Accióm",
+      "id": 15
     }
   ],
   "clasificaciones": [

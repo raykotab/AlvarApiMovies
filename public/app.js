@@ -11,12 +11,13 @@ function showData() {
         receivedData.forEach(pelicula => {
             // console.log(pelicula);
              seccionPelicula.innerHTML += `
-             <div class-"pelicula">
-               <span id="title">` + pelicula.nombre + `</span>
-               <span id="director">` + pelicula.director + `</span>
-               <span id="genre">` + pelicula.genre + `</span>
-               <button>Edit</button>
-               <button>Delete</button>
+             <div class="pelicula">
+               <span id="title">` + pelicula.nombre + `</span><br/>
+               <span id="director">` + pelicula.director + `</span><br/>
+               <span id="genre">` + pelicula.clasificacion + `</span><br/>
+               <img src="${pelicula.poster}" id="poster"><br/>
+               <button data-id="${pelicula.id}" id="edit-${pelicula.id}" data-action="edit">Edit</button>
+               <button data-id="${pelicula.id}" id="delete-${pelicula.id}" data-action="delete">Delete</button>
                </div>
                `;
         }); 

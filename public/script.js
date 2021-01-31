@@ -11,14 +11,24 @@ export class Api {
            },
        });
        return response.json();
-        // .then(response => response.json())
-        // .then(data => saveData());
-        // let savedData = this.saveData();
+        
     }
+
+    async deleteData(id) {
+        const response = await fetch(url, {
+            method: 'DELETE',
+            redirect: 'follow',
+            headers: {
+             'Content-Type': 'application/json'
+            },
+        });
+        return response.json();
+    }
+
 }
 
 
-let movieList = 
+//let movieList = 
 
 
 
@@ -28,28 +38,28 @@ let movieList =
    // let movieList=[];
 //let arrImg = ["", ];
 
-    function mostrarPeliculas(data){
-        //console.log(data);
+    // function mostrarPeliculas(data){
+    //     //console.log(data);
 
-        data.forEach(pelicula => {
-         // console.log(pelicula);
-          seccionPelicula.innerHTML += `
-          <div class-"pelicula">
+    //     data.forEach(pelicula => {
+    //      // console.log(pelicula);
+    //       seccionPelicula.innerHTML += `
+    //       <div class-"pelicula">
         
-            <span id="title">` + pelicula.nombre + `</span>
-            <span id="director">` + pelicula.director + `</span>
-            <span id="genre">` + pelicula.genre + `</span>
-            <button>Edit</button>
-            <button>Delete</button>
-            </div>
-            `;
+    //         <span id="title">` + pelicula.nombre + `</span>
+    //         <span id="director">` + pelicula.director + `</span>
+    //         <span id="genre">` + pelicula.genre + `</span>
+    //         <button>Edit</button>
+    //         <button>Delete</button>
+    //         </div>
+    //         `;
           
-            // let movieBox = "<div>" + pelicula["nombre"] + "</div>";
-           // movieList.push(movieBox);
-        }); 
-        //console.log(movieList);
+    //         // let movieBox = "<div>" + pelicula["nombre"] + "</div>";
+    //        // movieList.push(movieBox);
+    //     }); 
+    //     //console.log(movieList);
 
-    }
+    // }
     
 
 
