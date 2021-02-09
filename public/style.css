@@ -1,6 +1,21 @@
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    
+    background-color: rgb(111, 124, 138);
+    display: flex;
+    align-content: center;
+}
+
+#peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;     
+}
+
+#pelicula {
+    border: solid 1px gray;
+    display: flex;
 }
 
 img {

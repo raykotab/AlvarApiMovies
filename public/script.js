@@ -2,8 +2,13 @@
 
 export class Api {
 
-    async sendData(url) {
-       const response = await fetch(url, {
+    constructor() {
+    this.url = 'http://localhost:3000/peliculas';
+    
+    }
+
+    async sendData() {
+       const response = await fetch(this.url, {
            method: 'GET',
            redirect: 'follow',
            headers: {
@@ -14,52 +19,66 @@ export class Api {
         
     }
 
-    async deleteData(id) {
-        const response = await fetch(url, {
-            method: 'DELETE',
+      postMovieData (movie) {
+          
+        let movieBody = JSON.stringify({
+            'director': movie.directorInput,
+            'title': movie.titleInput,
+            'genre': movie.genreInput,
+            'cover': movie.coverInput,
+        })
+        
+        fetch(this.url, {
+            method: 'POST',
+            body: movieBody,
             redirect: 'follow',
             headers: {
-             'Content-Type': 'application/json'
-            },
-        });
-        return response.json();
-    }
+                'Content-Type': 'application/json'
+            }})
+            .then(response => response.text())
+            .catch(error => console.log('error', error));
+            //return response.json();
+        
+      }
+    
 
-}
+    // deleteMovie(movieId) {
+        
+    //     document.getElementById('#delete-${pelicula.id}').remove();
 
+    // };    
+};
+
+
+
+// var raw = "";
+
+// var requestOptions = {
+//   method: 'DELETE',
+//   body: raw,
+//   redirect: 'follow'
+// };
+
+// fetch("http://localhost:3000/peliculas/14", requestOptions)
+//   .then(response => response.text())
+//   .then(result => console.log(result))
+//   .catch(error => console.log('error', error));
 
 //let movieList = 
 
 
 
     
-//a partir de aui va a controller
+//a partir de aqui va a controller
     //
    // let movieList=[];
-//let arrImg = ["", ];
+//let arrImg = ["", ];   
+// let movieBox = "<div>" + pelicula["nombre"] + "</div>";
+// movieList.push(movieBox);
+//     }); 
+//console.log(movieList);
 
-    // function mostrarPeliculas(data){
-    //     //console.log(data);
-
-    //     data.forEach(pelicula => {
-    //      // console.log(pelicula);
-    //       seccionPelicula.innerHTML += `
-    //       <div class-"pelicula">
-        
-    //         <span id="title">` + pelicula.nombre + `</span>
-    //         <span id="director">` + pelicula.director + `</span>
-    //         <span id="genre">` + pelicula.genre + `</span>
-    //         <button>Edit</button>
-    //         <button>Delete</button>
-    //         </div>
-    //         `;
-          
-    //         // let movieBox = "<div>" + pelicula["nombre"] + "</div>";
-    //        // movieList.push(movieBox);
-    //     }); 
-    //     //console.log(movieList);
-
-    // }
+// }
     
 
 
@@ -70,7 +89,7 @@ export class Api {
 
 let longitudArray= arrayParticipantes.length;
 
-for (leti = 0;i < longitudArray;i++) {​​​​
+for (let i = 0; i < longitudArray; i++) {​​​​
 
 displayParticipantes.innerHTML+= `
 
@@ -88,5 +107,3 @@ onerror="this.onerror=null;this.src='./imgWod/generico.png';">
 }​​​​
 
 }​​​​*/
-
-//list fetch
