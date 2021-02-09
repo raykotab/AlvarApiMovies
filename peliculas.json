@@ -2,50 +2,50 @@
   "peliculas": [
     {
       "id": 4,
-      "nombre": "300",
+      "title": "300",
       "director": "Zack Snyder",
-      "clasificacion": "Acción",
+      "genre": "Acción",
       "poster": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/wb-047194-Full-Image_GalleryBackground-en-US-1483993558755._RI_.jpg"
     },
     {
       "id": 5,
-      "nombre": "El silencio de los corderos",
+      "title": "El silencio de los corderos",
       "director": "Jonathan Demme",
-      "clasificacion": "Drama",
+      "genre": "Drama",
       "poster": "https://ep00.epimg.net/elpais/imagenes/2017/04/26/album/1493221092_629195_1493221368_album_normal.jpg"
     },
     {
       "id": 6,
-      "nombre": "Forrest Gump",
+      "title": "Forrest Gump",
       "director": "Robert Zemeckis",
-      "clasificacion": "Comedia",
+      "genre": "Comedia",
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGGFOeDrfCw6gCkuq8OJrQkMQAMQarAZbkQ&usqp=CAU"
     },
     {
       "id": 7,
-      "nombre": "Las Hurdes",
+      "title": "Las Hurdes",
       "director": "Luis Buñuel",
-      "clasificacion": "Documental",
+      "genre": "Documental",
       "poster": "https://static.elcorreo.com/www/multimedia/201904/04/media/cortadas/lashurdes2-kvlB-U701092459809bcF-624x385@RC.jpg"
     },
     {
       "id": 8,
-      "nombre": "Down by Law",
+      "title": "Down by Law",
       "director": "Jim Jarmush",
-      "clasificacion": "Comedia",
+      "genre": "Comedia",
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpyG8ZvUc_c_f3J1M6I0VRfvKJ8dN3J-lqg&usqp=CAU"
     },
     {
-      "nombre": "El sexto sentido",
+      "title": "El sexto sentido",
       "director": "M. Night Shyamalan",
-      "clasificacion": "Drama",
+      "genre": "Drama",
       "poster": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.filmaffinity.com%2Fes%2Ffilm607127.html&psig=AOvVaw0sYZISVnIG73WcR7ho_d6n&ust=1612201842459000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCRsYLexu4CFQAAAAAdAAAAABAE",
       "id": 9
     },
     {
-      "nombre": "Sagan",
+      "title": "Sagan",
       "director": "M. Night Shyamalan",
-      "clasificacion": "Drama",
+      "genre": "Drama",
       "poster": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbestclassicbands.com%2Fhired-gun-documentary-5-24-17%2Fpsig=AOvVaw0oSRwU4ui1Z2R2WeG6r58l&ust=1612422028555000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPi436WSze4CFQAAAAAdAAAAABAJ",
       "id": 10
     },
@@ -54,350 +54,90 @@
     },
     {
       "id": 13,
-      "nombre": "Star Wars",
+      "title": "Star Wars",
       "director": "George Lucas",
-      "clasificacion": "Sci-Fi",
+      "genre": "Sci-Fi",
       "poster": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg"
     },
     {
       "id": 1,
-      "nombre": "Golpe en la pequeña china",
+      "title": "Golpe en la pequeña china",
       "director": "John Carpenter",
-      "clasificacion": "Acción",
+      "genre": "Acción",
       "poster": "https://image.posterlounge.com/img/products/520000/516275/516275_poster_l.jpg"
     },
     {
-      "nombre": "También la lluvia",
+      "title": "También la lluvia",
       "director": "Iciar Bollaín",
-      "clasificacion": "Acción",
+      "genre": "Acción",
       "poster": "https://i.blogs.es/a339b9/tambien-la-lluvia-2011-critica/1366_2000.jpg",
       "id": 16
     },
     {
-      "nombre": "The Straight Story",
+      "title": "The Straight Story",
       "director": "David Lynch",
-      "clasificacion": "Drama",
+      "genre": "Drama",
       "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/The_StraigthStory.gif/220px-The_StraigthStory.gif",
       "id": 17
     },
     {
-      "nombre": "Space Balls",
+      "title": "Space Balls",
       "director": "Mel Brooks",
-      "clasificacion": "Comedia",
+      "genre": "Comedia",
       "poster": "https://upload.wikimedia.org/wikipedia/en/4/45/Spaceballs.jpg",
       "id": 18
     },
     {
-      "nombre": "Hired Gun",
+      "title": "Hired Gun",
       "director": "Fran Strine",
-      "clasificacion": "Documental",
+      "genre": "Documental",
       "poster": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/5x3tw-JTBRAY48Z99-Full-Image_GalleryCover-en-US-1603125849104._UY500_UX667_RI_Vb7af7f14a6757503a1b2a0522d0ac54e_TTW_.jpg",
       "id": 19
     },
     {
-      "nombre": "Brazil",
+      "title": "Brazil",
       "director": "Terry Gilliam",
-      "clasificacion": "Sci-Fi",
+      "genre": "Sci-Fi",
       "poster": "https://i.ytimg.com/vi/R5eyehDr9cs/movieposter.jpg",
       "id": 20
     },
     {
-      "director": "directorInput",
-      "title": "titleInput",
-      "genre": "genreInput",
-      "cover": "coverInput",
-      "id": 21
-    },
-    {
-      "director": "directorInput",
-      "title": "titleInput",
-      "genre": "genreInput",
-      "cover": "coverInput",
-      "id": 22
-    },
-    {
-      "director": "directorInput",
-      "title": "titleInput",
-      "genre": "genreInput",
-      "cover": "coverInput",
-      "id": 23
-    },
-    {
-      "nombre": "Brazil",
+      "title": "Brazil",
       "director": "Terry Gilliam",
-      "clasificacion": "Sci-Fi",
+      "genre": "Sci-Fi",
       "poster": "https://i.ytimg.com/vi/R5eyehDr9cs/movieposter.jpg",
       "id": 24
     },
     {
-      "director": "directorInput",
-      "title": "titleInput",
-      "genre": "genreInput",
-      "cover": "coverInput",
+      "director": "John Hughes",
+      "title": "the breakfast club",
+      "genre": "drama",
+      "cover": "https://media.apnarm.net.au/media/images/2020/02/22/v3imagesbin76faee49ea74b4b74cf4db701545391d-g49f3xxica17ls3jvt2_ct1880x930.jpg",
       "id": 25
     },
     {
-      "director": "directorInput",
-      "title": "titleInput",
-      "genre": "genreInput",
-      "cover": "coverInput",
+      "director": "John Hughes",
+      "title": "the breakfast club",
+      "genre": "drama",
+      "cover": "https://media.apnarm.net.au/media/images/2020/02/22/v3imagesbin76faee49ea74b4b74cf4db701545391d-g49f3xxica17ls3jvt2_ct1880x930.jpg",
       "id": 26
-    },
-    {
-      "director": "directorInput",
-      "title": "titleInput",
-      "genre": "genreInput",
-      "cover": "coverInput",
-      "id": 27
-    },
-    {
-      "director": "directorInput",
-      "title": "titleInput",
-      "genre": "genreInput",
-      "cover": "coverInput",
-      "id": 28
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 29
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 30
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 31
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 32
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 33
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 34
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 35
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 36
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 37
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 38
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 39
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 40
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 41
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 42
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 43
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 44
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 45
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 46
-    },
-    {
-      "director": "",
-      "title": "",
-      "genre": "",
-      "cover": "",
-      "id": 47
-    },
-    {
-      "id": 48
-    },
-    {
-      "id": 49
-    },
-    {
-      "id": 50
-    },
-    {
-      "id": 51
-    },
-    {
-      "id": 52
-    },
-    {
-      "id": 53
-    },
-    {
-      "id": 54
-    },
-    {
-      "id": 55
-    },
-    {
-      "id": 56
-    },
-    {
-      "id": 57
-    },
-    {
-      "id": 58
-    },
-    {
-      "id": 59
-    },
-    {
-      "id": 60
-    },
-    {
-      "id": 61
-    },
-    {
-      "id": 62
-    },
-    {
-      "id": 63
-    },
-    {
-      "id": 64
-    },
-    {
-      "id": 65
-    },
-    {
-      "id": 66
-    },
-    {
-      "director": "sfjuxfgujhs",
-      "title": "dfgdfgh",
-      "genre": "sfghsfgh",
-      "cover": "",
-      "id": 67
-    },
-    {
-      "director": "sfjuxfgujhs",
-      "title": "dfgdfgh",
-      "genre": "sfghsfgh",
-      "cover": "",
-      "id": 68
-    },
-    {
-      "director": "sfjuxfgujhs",
-      "title": "dfgdfgh",
-      "genre": "sfghsfgh",
-      "cover": "",
-      "id": 69
-    },
-    {
-      "director": "sfjuxfgujhs",
-      "title": "dfgdfgh",
-      "genre": "sfghsfgh",
-      "cover": "",
-      "id": 70
-    },
-    {
-      "director": "sfjuxfgujhs",
-      "title": "dfgdfgh",
-      "genre": "sfghsfgh",
-      "cover": "",
-      "id": 71
     }
   ],
   "clasificaciones": [
     {
-      "nombre": "Drama",
+      "name": "Drama",
       "id": 1
     },
     {
-      "nombre": "Comedia",
+      "name": "Comedy",
       "id": 2
     },
     {
-      "nombre": "Documental",
+      "name": "Documental",
       "id": 3
     },
     {
-      "nombre": "Acción",
+      "name": "Accion",
       "id": 4
     }
   ]

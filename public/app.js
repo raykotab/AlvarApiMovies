@@ -4,7 +4,9 @@ let api = new Api;
 let receivedData = api.sendData();
 const addForm = document.getElementById('addMovies');
 addForm.addEventListener('submit', addMovie); 
-console.log(document.querySelector('#director'));
+//console.log(document.querySelector('#director'));
+
+
 function showData() {
     
     let seccionPelicula = document.getElementById("peliculas");
@@ -13,9 +15,9 @@ function showData() {
             // console.log(pelicula);
              seccionPelicula.innerHTML += `
              <div class="pelicula">
-               <span id="moviaTitle">` + pelicula.nombre + `</span><br/>
+               <span id="moviaTitle">` + pelicula.title + `</span><br/>
                <span id="movieDirector">` + pelicula.director + `</span><br/>
-               <span id="MovieGenre">` + pelicula.clasificacion + `</span><br/>
+               <span id="movieGenre">` + pelicula.genre + `</span><br/>
                <img src="${pelicula.poster}" id="moviePoster"><br/>
                <button type="button" id="${pelicula.id}" onclick="editMovie(${pelicula.id})">Edit</button>
                <button type="button" id="${pelicula.id}" onclick="deleteMovie(${pelicula.id})">Delete</button>
@@ -27,9 +29,8 @@ function showData() {
 showData();
 
 function addMovie(event) {
-    event.preventDefault();
-    
-    
+
+    event.preventDefault();    
     const movie = {
         directorInput: document.querySelector('#director').value,
         titleInput: document.querySelector('#title').value,
@@ -38,4 +39,5 @@ function addMovie(event) {
     }
     console.log(movie);
     api.postMovieData (movie);
+    showData();
 }
