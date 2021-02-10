@@ -5,48 +5,48 @@
       "title": "300",
       "director": "Zack Snyder",
       "genre": "Acción",
-      "poster": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/wb-047194-Full-Image_GalleryBackground-en-US-1483993558755._RI_.jpg"
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/wb-047194-Full-Image_GalleryBackground-en-US-1483993558755._RI_.jpg"
     },
     {
       "id": 5,
       "title": "El silencio de los corderos",
       "director": "Jonathan Demme",
       "genre": "Drama",
-      "poster": "https://ep00.epimg.net/elpais/imagenes/2017/04/26/album/1493221092_629195_1493221368_album_normal.jpg"
+      "cover": "https://ep00.epimg.net/elpais/imagenes/2017/04/26/album/1493221092_629195_1493221368_album_normal.jpg"
     },
     {
       "id": 6,
       "title": "Forrest Gump",
       "director": "Robert Zemeckis",
       "genre": "Comedia",
-      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGGFOeDrfCw6gCkuq8OJrQkMQAMQarAZbkQ&usqp=CAU"
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGGFOeDrfCw6gCkuq8OJrQkMQAMQarAZbkQ&usqp=CAU"
     },
     {
       "id": 7,
       "title": "Las Hurdes",
       "director": "Luis Buñuel",
       "genre": "Documental",
-      "poster": "https://static.elcorreo.com/www/multimedia/201904/04/media/cortadas/lashurdes2-kvlB-U701092459809bcF-624x385@RC.jpg"
+      "cover": "https://static.elcorreo.com/www/multimedia/201904/04/media/cortadas/lashurdes2-kvlB-U701092459809bcF-624x385@RC.jpg"
     },
     {
       "id": 8,
       "title": "Down by Law",
       "director": "Jim Jarmush",
       "genre": "Comedia",
-      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpyG8ZvUc_c_f3J1M6I0VRfvKJ8dN3J-lqg&usqp=CAU"
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpyG8ZvUc_c_f3J1M6I0VRfvKJ8dN3J-lqg&usqp=CAU"
     },
     {
       "title": "El sexto sentido",
       "director": "M. Night Shyamalan",
       "genre": "Drama",
-      "poster": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.filmaffinity.com%2Fes%2Ffilm607127.html&psig=AOvVaw0sYZISVnIG73WcR7ho_d6n&ust=1612201842459000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCRsYLexu4CFQAAAAAdAAAAABAE",
+      "cover": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.filmaffinity.com%2Fes%2Ffilm607127.html&psig=AOvVaw0sYZISVnIG73WcR7ho_d6n&ust=1612201842459000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCRsYLexu4CFQAAAAAdAAAAABAE",
       "id": 9
     },
     {
       "title": "Sagan",
       "director": "M. Night Shyamalan",
       "genre": "Drama",
-      "poster": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbestclassicbands.com%2Fhired-gun-documentary-5-24-17%2Fpsig=AOvVaw0oSRwU4ui1Z2R2WeG6r58l&ust=1612422028555000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPi436WSze4CFQAAAAAdAAAAABAJ",
+      "cover": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbestclassicbands.com%2Fhired-gun-documentary-5-24-17%2Fpsig=AOvVaw0oSRwU4ui1Z2R2WeG6r58l&ust=1612422028555000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPi436WSze4CFQAAAAAdAAAAABAJ",
       "id": 10
     },
     {
@@ -57,70 +57,126 @@
       "title": "Star Wars",
       "director": "George Lucas",
       "genre": "Sci-Fi",
-      "poster": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg"
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg"
     },
     {
       "id": 1,
       "title": "Golpe en la pequeña china",
       "director": "John Carpenter",
       "genre": "Acción",
-      "poster": "https://image.posterlounge.com/img/products/520000/516275/516275_poster_l.jpg"
+      "cover": "https://image.posterlounge.com/img/products/520000/516275/516275_poster_l.jpg"
     },
     {
       "title": "También la lluvia",
       "director": "Iciar Bollaín",
       "genre": "Acción",
-      "poster": "https://i.blogs.es/a339b9/tambien-la-lluvia-2011-critica/1366_2000.jpg",
+      "cover": "https://i.blogs.es/a339b9/tambien-la-lluvia-2011-critica/1366_2000.jpg",
       "id": 16
     },
     {
       "title": "The Straight Story",
       "director": "David Lynch",
       "genre": "Drama",
-      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/The_StraigthStory.gif/220px-The_StraigthStory.gif",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/The_StraigthStory.gif/220px-The_StraigthStory.gif",
       "id": 17
     },
     {
       "title": "Space Balls",
       "director": "Mel Brooks",
       "genre": "Comedia",
-      "poster": "https://upload.wikimedia.org/wikipedia/en/4/45/Spaceballs.jpg",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/4/45/Spaceballs.jpg",
       "id": 18
     },
     {
       "title": "Hired Gun",
       "director": "Fran Strine",
       "genre": "Documental",
-      "poster": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/5x3tw-JTBRAY48Z99-Full-Image_GalleryCover-en-US-1603125849104._UY500_UX667_RI_Vb7af7f14a6757503a1b2a0522d0ac54e_TTW_.jpg",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/5x3tw-JTBRAY48Z99-Full-Image_GalleryCover-en-US-1603125849104._UY500_UX667_RI_Vb7af7f14a6757503a1b2a0522d0ac54e_TTW_.jpg",
       "id": 19
     },
     {
       "title": "Brazil",
       "director": "Terry Gilliam",
       "genre": "Sci-Fi",
-      "poster": "https://i.ytimg.com/vi/R5eyehDr9cs/movieposter.jpg",
+      "cover": "https://i.ytimg.com/vi/R5eyehDr9cs/movieposter.jpg",
       "id": 20
     },
     {
       "title": "Brazil",
       "director": "Terry Gilliam",
       "genre": "Sci-Fi",
-      "poster": "https://i.ytimg.com/vi/R5eyehDr9cs/movieposter.jpg",
+      "cover": "https://i.ytimg.com/vi/R5eyehDr9cs/movieposter.jpg",
       "id": 24
     },
     {
       "director": "John Hughes",
       "title": "the breakfast club",
       "genre": "drama",
-      "cover": "https://media.apnarm.net.au/media/images/2020/02/22/v3imagesbin76faee49ea74b4b74cf4db701545391d-g49f3xxica17ls3jvt2_ct1880x930.jpg",
+      "cover": "https://m.media-amazon.com/images/M/MV5BOTM5N2ZmZTMtNjlmOS00YzlkLTk3YjEtNTU1ZmQ5OTdhODZhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
       "id": 25
     },
     {
       "director": "John Hughes",
       "title": "the breakfast club",
       "genre": "drama",
-      "cover": "https://media.apnarm.net.au/media/images/2020/02/22/v3imagesbin76faee49ea74b4b74cf4db701545391d-g49f3xxica17ls3jvt2_ct1880x930.jpg",
+      "cover": "https://m.media-amazon.com/images/M/MV5BOTM5N2ZmZTMtNjlmOS00YzlkLTk3YjEtNTU1ZmQ5OTdhODZhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
       "id": 26
+    },
+    {
+      "director": "jim jarmush",
+      "title": "night on earth",
+      "genre": "comedy",
+      "cover": "https://s3.amazonaws.com/criterion-production/films/300f04cc44f51c1d1b81f577e32bba58/elypGlAsVgJgbxoAuddnPOiRlvDUf5_large.jpg",
+      "id": 27
+    },
+    {
+      "director": "jim jarmush",
+      "title": "night on earth",
+      "genre": "comedy",
+      "cover": "https://s3.amazonaws.com/criterion-production/films/300f04cc44f51c1d1b81f577e32bba58/elypGlAsVgJgbxoAuddnPOiRlvDUf5_large.jpg",
+      "id": 28
+    },
+    {
+      "director": "jim jarmush",
+      "title": "night on earth",
+      "genre": "comedy",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/f/f9/Nightonearth.jpg",
+      "id": 29
+    },
+    {
+      "director": "jim jarmush",
+      "title": "night on earth",
+      "genre": "comedy",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/f/f9/Nightonearth.jpg",
+      "id": 30
+    },
+    {
+      "director": "jim jarmush",
+      "title": "night on earth",
+      "genre": "comedy",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/f/f9/Nightonearth.jpg",
+      "id": 31
+    },
+    {
+      "director": "Bernardo Bertollucci",
+      "title": "Noveccentos",
+      "genre": "Drama",
+      "cover": "https://cloudfront-eu-central-1.images.arcpublishing.com/larazon/FAELBM7BOFAS3O7KLD5IGDVHBA.png",
+      "id": 32
+    },
+    {
+      "director": "Bernardo Bertollucci",
+      "title": "Noveccentos",
+      "genre": "Drama",
+      "cover": "https://cloudfront-eu-central-1.images.arcpublishing.com/larazon/FAELBM7BOFAS3O7KLD5IGDVHBA.png",
+      "id": 33
+    },
+    {
+      "director": "Bernardo Bertollucci",
+      "title": "Noveccentos",
+      "genre": "Drama",
+      "cover": "https://cloudfront-eu-central-1.images.arcpublishing.com/larazon/FAELBM7BOFAS3O7KLD5IGDVHBA.png",
+      "id": 34
     }
   ],
   "clasificaciones": [

@@ -19,7 +19,7 @@ export class Api {
         
     }
 
-      async postMovieData (movie) {
+    async postMovieData (movie) {
           
         let movieBody = JSON.stringify({
             'director': movie.directorInput,
@@ -36,18 +36,15 @@ export class Api {
                 'Content-Type': 'application/json'
             }})
             .then(response => response.text())
-            .then(showData())
             .catch(error => console.log('error', error));
-            return response.json();
+           // return response.json();
         
-      }
+    }
     
-
-    // deleteMovie(movieId) {
+    async deleteData (movieId) {
         
-    //     document.getElementById('#delete-${pelicula.id}').remove();
-
-    // };    
+    }
+       
 };
 
 
