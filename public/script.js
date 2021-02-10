@@ -28,7 +28,7 @@ export class Api {
             'cover': movie.coverInput,
         })
         
-        const response = await fetch(this.url, {
+         await fetch(this.url, {
             method: 'POST',
             body: movieBody,
             redirect: 'follow',
@@ -37,71 +37,32 @@ export class Api {
             }})
             .then(response => response.text())
             .catch(error => console.log('error', error));
-           // return response.json();
+           
         
     }
     
-    async deleteData (movieId) {
-        
+    deleteData (movieId) {
+        var myHeaders = new Headers();
+        myHeaders.append("id", movieId);
+
+        var raw = "";
+
+        var requestOptions = {
+        method: 'DELETE',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+        };
+
+        fetch(url, requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
     }
        
 };
 
 
 
-// var raw = "";
-
-// var requestOptions = {
-//   method: 'DELETE',
-//   body: raw,
-//   redirect: 'follow'
-// };
-
-// fetch("http://localhost:3000/peliculas/14", requestOptions)
-//   .then(response => response.text())
-//   .then(result => console.log(result))
-//   .catch(error => console.log('error', error));
-
-//let movieList = 
 
 
-
-    
-//a partir de aqui va a controller
-    //
-   // let movieList=[];
-//let arrImg = ["", ];   
-// let movieBox = "<div>" + pelicula["nombre"] + "</div>";
-// movieList.push(movieBox);
-//     }); 
-//console.log(movieList);
-
-// }
-    
-
-
-    
-
-
-   /* displayParticipantes.innerHTML= "";
-
-let longitudArray= arrayParticipantes.length;
-
-for (let i = 0; i < longitudArray; i++) {​​​​
-
-displayParticipantes.innerHTML+= `
-
-<picture class="pictureParticipante" id="display`+ arrayParticipantes[i]+ `">
-
-<img src="./imgWod/`+ arrayParticipantes[i]+ `.png" alt="foto`+ arrayParticipantes[i]+ `"
-
-onerror="this.onerror=null;this.src='./imgWod/generico.png';">
-
-<figcaption>` 
- + arrayParticipantes[i]+ `</figcaption>
-
-</picture>`;
-
-}​​​​
-
-}​​​​*/

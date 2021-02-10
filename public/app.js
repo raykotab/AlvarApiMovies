@@ -1,34 +1,49 @@
 import {Api} from "./script.js";
+import {CrudMovie} from "./CrudMovie.js";
 
-let api = new Api;
+
+const api = new Api;
+const crudMovie = new CrudMovie;
+
 const addForm = document.getElementById('addMovies');
 addForm.addEventListener('submit', addMovie); 
-//console.log(document.querySelector('#director'));
-//const showData = document.addEventListener('load', showData);
+
 
 function showData() {
-
+    
     let receivedData = api.sendData();
     let seccionMovies = document.getElementById("peliculas");
-    console.log(receivedData);
+    
     seccionMovies.innerHTML = "";
     receivedData.then(receivedData => {        
         receivedData.forEach(pelicula => {
-            // console.log(pelicula);
-             seccionMovies.innerHTML += `
-             <div class="movieCard">
-               <span id="moviaTitle">` + pelicula.title + `</span><br/>
-               <span id="movieDirector">` + pelicula.director + `</span><br/>
-               <span id="movieGenre">` + pelicula.genre + `</span><br/>
-               <img src="${pelicula.cover}" id="movieCover"><br/>
-               <button type="button" id="${pelicula.id}" onclick="editMovie(${pelicula.id})">Edit</button>
-               <button type="button" id="${pelicula.id}" onclick="deleteMovie(${pelicula.id})">Delete</button>
-               </div>
-               `;
+            
+            seccionMovies.innerHTML += `
+            <div class="movieCard">
+            <span id="moviaTitle">` + pelicula.title + `</span><br/>
+            <span id="movieDirector">` + pelicula.director + `</span><br/>
+            <span id="movieGenre">` + pelicula.genre + `</span><br/>
+            <img src="${pelicula.cover}" id="movieCover"><br/>
+            <button type="button" id="btn-edit" onclick="editMovie(${pelicula.id})">Edit</button>
+            <button type="button" class="deleteMovie" id="delete-${pelicula.id}" value="${pelicula.id}">Delete</button>
+            </div>
+            `;
         }); 
     });
 }
 showData();
+
+let deleteButtons = document.querySelectorAll('.deleteMovie');
+console.log(deleteButtons);
+
+
+deleteButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+        console.log('dsiliiiiiit');
+        //crudMovie.deleteMovie(e)
+    });
+});
 
 function addMovie(event) {
 
@@ -42,10 +57,6 @@ function addMovie(event) {
     }
     api.postMovieData (movie)
     showData();
-}
+};
 
-function deleteMovie(movieId) {
-        
-        document.getElementById('#delete-${pelicula.id}').remove();
 
-}; 
