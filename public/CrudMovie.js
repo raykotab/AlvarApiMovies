@@ -1,10 +1,30 @@
 
 export class CrudMovie {
 
-    deleteMovie(e) {
+  constructor (api) {
+      this.api = api;
+  }
+       
+    addMovie(event) {
 
-        console.log(e)  
-        //document.getElementById('btn-delete').remove();
-        //api.deleteData(movieId);
+        event.preventDefault();   
+    
+        const movie = {
+            directorInput: document.querySelector('#director').value,
+            titleInput: document.querySelector('#title').value,
+            genreInput: document.querySelector('#genre').value,
+            coverInput: document.querySelector('#cover').value,
+        }
+        this.api.postMovieData(movie)
+        
+    };
+
+    deleteMovie(evt) {  
+        const movieId = evt.target.value;
+        const movieToDelete = document.querySelector(`#movieCard-${movieId}`)
+        //console.log(this.api);
+        this.api.deleteData(movieId);
+        movieToDelete.remove();
+        
     }; 
 }

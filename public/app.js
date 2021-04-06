@@ -1,13 +1,17 @@
-import {Api} from "./script.js";
+import {Api} from "./apiService.js";
 import {CrudMovie} from "./CrudMovie.js";
 
 
 const api = new Api;
-const crudMovie = new CrudMovie;
+const crudMovie = new CrudMovie(api);
 
 const addForm = document.getElementById('addMovies');
-addForm.addEventListener('submit', addMovie); 
+addForm.addEventListener('submit', () => {
+    crudMovie.addMovie(event);
+    showData();
+}); 
 
+//console.log(crudMovie);
 
 function showData() {
     
@@ -19,8 +23,8 @@ function showData() {
         receivedData.forEach(pelicula => {
             
             seccionMovies.innerHTML += `
-            <div class="movieCard">
-            <span id="moviaTitle">` + pelicula.title + `</span><br/>
+            <div class="movieCard" id="movieCard-${pelicula.id}">
+            <span id="movieTitle">` + pelicula.title + `</span><br/>
             <span id="movieDirector">` + pelicula.director + `</span><br/>
             <span id="movieGenre">` + pelicula.genre + `</span><br/>
             <img src="${pelicula.cover}" id="movieCover"><br/>
@@ -29,34 +33,22 @@ function showData() {
             </div>
             `;
         }); 
+    })
+
+    .then(() => {
+
+        let deleteButtons = document.querySelectorAll('.deleteMovie');
+        deleteButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            crudMovie.deleteMovie(event)
+        });
+        })
     });
 }
 showData();
-
-let deleteButtons = document.querySelectorAll('.deleteMovie');
-console.log(deleteButtons);
+export default showData;
 
 
-deleteButtons.forEach(button => {
 
-    button.addEventListener('click', () => {
-        console.log('dsiliiiiiit');
-        //crudMovie.deleteMovie(e)
-    });
-});
-
-function addMovie(event) {
-
-    event.preventDefault();   
-
-    const movie = {
-        directorInput: document.querySelector('#director').value,
-        titleInput: document.querySelector('#title').value,
-        genreInput: document.querySelector('#genre').value,
-        coverInput: document.querySelector('#cover').value,
-    }
-    api.postMovieData (movie)
-    showData();
-};
 
 

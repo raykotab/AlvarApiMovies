@@ -42,6 +42,8 @@ export class Api {
     }
     
     deleteData (movieId) {
+
+        const url = `${this.url}/${movieId}`;
         var myHeaders = new Headers();
         myHeaders.append("id", movieId);
 

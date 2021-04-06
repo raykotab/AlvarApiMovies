@@ -132,6 +132,13 @@
       "genre": "documentary",
       "cover": "https://upload.wikimedia.org/wikipedia/en/9/93/Vagabondposter.jpg",
       "id": 36
+    },
+    {
+      "director": "asdg",
+      "title": "adg",
+      "genre": "adg",
+      "cover": "https://en.wikipedia.org/wiki/File:Karate_kid.jpg",
+      "id": 37
     }
   ],
   "clasificaciones": [

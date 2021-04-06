@@ -11,14 +11,26 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;     
+    padding: 5%;
+}
+
+.movieCard {
+
+    padding: 5%;
 }
 
 #pelicula {
     border: solid 1px gray;
     display: flex;
+
 }
 
 img {
     width: 20vw;
     height: 20vw;
+
+}
+
+form {
+    padding: 10%;
 }
