@@ -19,6 +19,21 @@ export class Api {
         
     }
 
+    async getOneData(movieId) {
+        const response = await fetch(`${this.url}/${movieId}`, {
+            method: 'GET',
+            redirect: 'follow',
+            headers: {
+             'id': 'movieId',   
+             'Content-Type': 'application/json'
+            },
+        });
+        //console.log('geoneData tu!', response.json());
+        return response.json();
+         
+    }
+ 
+ 
     async postMovieData (movie) {
           
         let movieBody = JSON.stringify({
@@ -36,8 +51,7 @@ export class Api {
                 'Content-Type': 'application/json'
             }})
             .then(response => response.text())
-            .catch(error => console.log('error', error));
-           
+            .catch(error => console.log('error', error));    
         
     }
     
@@ -59,6 +73,30 @@ export class Api {
         fetch(url, requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+    }
+
+    async updateData (movieId, movieData) {
+        var myHeaders = new Headers();
+        myHeaders.append("id", "movieId");
+        myHeaders.append("Content-Type", "application/json");
+        
+        var raw = JSON.stringify({
+            'director': movieData.directorInput,
+            'title': movieData.titleInput,
+            'genre': movieData.genreInput,
+            'cover': movieData.coverInput,
+        });
+        
+        var requestOptions = {
+        method: 'PUT',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+        };
+        await fetch(`http://localhost:3000/peliculas/${movieId}`, requestOptions)
+        .then(response => response.text())
+        .then(result => console.log("esto es el result", result))
         .catch(error => console.log('error', error));
     }
        

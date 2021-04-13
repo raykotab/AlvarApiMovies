@@ -1,18 +1,11 @@
 {
   "peliculas": [
     {
-      "id": 4,
-      "title": "300",
-      "director": "Zack Snyder",
-      "genre": "Acción",
-      "cover": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/wb-047194-Full-Image_GalleryBackground-en-US-1483993558755._RI_.jpg"
-    },
-    {
-      "id": 5,
-      "title": "El silencio de los corderos",
-      "director": "Jonathan Demme",
-      "genre": "Drama",
-      "cover": "https://ep00.epimg.net/elpais/imagenes/2017/04/26/album/1493221092_629195_1493221368_album_normal.jpg"
+      "director": "aaaaaaa",
+      "title": "postman",
+      "genre": "postman",
+      "cover": "https://upload.wikimedia.org/wikipedia/en/9/93/Vagabondposter.jpg",
+      "id": 5
     },
     {
       "id": 6,
@@ -34,20 +27,6 @@
       "director": "Jim Jarmush",
       "genre": "Comedia",
       "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgpyG8ZvUc_c_f3J1M6I0VRfvKJ8dN3J-lqg&usqp=CAU"
-    },
-    {
-      "title": "El sexto sentido",
-      "director": "M. Night Shyamalan",
-      "genre": "Drama",
-      "cover": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.filmaffinity.com%2Fes%2Ffilm607127.html&psig=AOvVaw0sYZISVnIG73WcR7ho_d6n&ust=1612201842459000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCRsYLexu4CFQAAAAAdAAAAABAE",
-      "id": 9
-    },
-    {
-      "title": "Sagan",
-      "director": "M. Night Shyamalan",
-      "genre": "Drama",
-      "cover": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbestclassicbands.com%2Fhired-gun-documentary-5-24-17%2Fpsig=AOvVaw0oSRwU4ui1Z2R2WeG6r58l&ust=1612422028555000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPi436WSze4CFQAAAAAdAAAAABAJ",
-      "id": 10
     },
     {
       "id": 13,
@@ -85,13 +64,6 @@
       "id": 18
     },
     {
-      "title": "Hired Gun",
-      "director": "Fran Strine",
-      "genre": "Documental",
-      "cover": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/5x3tw-JTBRAY48Z99-Full-Image_GalleryCover-en-US-1603125849104._UY500_UX667_RI_Vb7af7f14a6757503a1b2a0522d0ac54e_TTW_.jpg",
-      "id": 19
-    },
-    {
       "title": "Brazil",
       "director": "Terry Gilliam",
       "genre": "Sci-Fi",
@@ -120,25 +92,11 @@
       "id": 32
     },
     {
-      "director": "Agnes Varda",
-      "title": "Sans Toit ni Loi",
-      "genre": "documentary",
-      "cover": "https://upload.wikimedia.org/wikipedia/en/9/93/Vagabondposter.jpg",
+      "director": "John G. Avildsen",
+      "title": "Karate Kid",
+      "genre": "Drama",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNTkzY2YzNmYtY2ViMS00MThiLWFlYTEtOWQ1OTBiOGEwMTdhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
       "id": 35
-    },
-    {
-      "director": "Agnes Varda",
-      "title": "Sans Toit ni Loi",
-      "genre": "documentary",
-      "cover": "https://upload.wikimedia.org/wikipedia/en/9/93/Vagabondposter.jpg",
-      "id": 36
-    },
-    {
-      "director": "asdg",
-      "title": "adg",
-      "genre": "adg",
-      "cover": "https://en.wikipedia.org/wiki/File:Karate_kid.jpg",
-      "id": 37
     }
   ],
   "clasificaciones": [

@@ -10,8 +10,37 @@ addForm.addEventListener('submit', () => {
     crudMovie.addMovie(event);
     showData();
 }); 
+const editForm = document.getElementById('editMovies');
 
-//console.log(crudMovie);
+editForm.addEventListener('submit', () => {
+    crudMovie.updateMovie(event);
+    showData();
+}); 
+
+
+
+async function editMovie(event) {
+
+    const oldMovieId = event.target.value;
+    const oldData = await api.getOneData(oldMovieId);
+
+   
+    const addMovieForm = document.getElementById("addMovies");
+    const editMovieForm = document.getElementById("editMovies");
+    addMovieForm.style.display = "none";
+    editMovieForm.style.display="block";
+    console.log(oldData.id);
+    const oldDirector = document.getElementById("newDirector");
+    oldDirector.value = oldData.director;
+    const oldTitle = document.getElementById("newTitle");
+    oldTitle.value = oldData.title;
+    const oldGenre = document.getElementById("newGenre");
+    oldGenre.value = oldData.genre;
+    const oldCover = document.getElementById("newCover");
+    oldCover.value = oldData.cover;
+    const movieId = document.getElementById("movieId");
+    movieId.value = oldData.id;
+}
 
 function showData() {
     
@@ -28,7 +57,7 @@ function showData() {
             <span id="movieDirector">` + pelicula.director + `</span><br/>
             <span id="movieGenre">` + pelicula.genre + `</span><br/>
             <img src="${pelicula.cover}" id="movieCover"><br/>
-            <button type="button" id="btn-edit" onclick="editMovie(${pelicula.id})">Edit</button>
+            <button type="button" class="editMovie" id="edit-${pelicula.id}" value="${pelicula.id}">Edit</button>
             <button type="button" class="deleteMovie" id="delete-${pelicula.id}" value="${pelicula.id}">Delete</button>
             </div>
             `;
@@ -43,10 +72,19 @@ function showData() {
             crudMovie.deleteMovie(event)
         });
         })
-    });
+        let updateButtons = document.querySelectorAll('.editMovie');
+        updateButtons.forEach(button => {
+        button.addEventListener('click', () => {
+           editMovie(event)
+        });
+        })
+    })
+
 }
 showData();
 export default showData;
+
+
 
 
 
