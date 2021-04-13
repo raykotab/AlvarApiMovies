@@ -10,26 +10,23 @@ addForm.addEventListener('submit', () => {
     crudMovie.addMovie(event);
     showData();
 }); 
-const editForm = document.getElementById('editMovies');
 
+const editForm = document.getElementById('editMovies');
 editForm.addEventListener('submit', () => {
     crudMovie.updateMovie(event);
     showData();
 }); 
-
-
 
 async function editMovie(event) {
 
     const oldMovieId = event.target.value;
     const oldData = await api.getOneData(oldMovieId);
 
-   
     const addMovieForm = document.getElementById("addMovies");
     const editMovieForm = document.getElementById("editMovies");
     addMovieForm.style.display = "none";
     editMovieForm.style.display="block";
-    console.log(oldData.id);
+    
     const oldDirector = document.getElementById("newDirector");
     oldDirector.value = oldData.director;
     const oldTitle = document.getElementById("newTitle");
@@ -44,18 +41,19 @@ async function editMovie(event) {
 
 function showData() {
     
-    let receivedData = api.sendData();
-    let seccionMovies = document.getElementById("peliculas");
+    const receivedData = api.sendData();
+    const seccionMovies = document.getElementById("peliculas");
     
     seccionMovies.innerHTML = "";
+
     receivedData.then(receivedData => {        
         receivedData.forEach(pelicula => {
             
             seccionMovies.innerHTML += `
             <div class="movieCard" id="movieCard-${pelicula.id}">
-            <span id="movieTitle">` + pelicula.title + `</span><br/>
-            <span id="movieDirector">` + pelicula.director + `</span><br/>
-            <span id="movieGenre">` + pelicula.genre + `</span><br/>
+            <span id="movieTitle">${pelicula.title}</span><br/>
+            <span id="movieDirector">${pelicula.director}</span><br/>
+            <span id="movieGenre">${pelicula.genre}</span><br/>
             <img src="${pelicula.cover}" id="movieCover"><br/>
             <button type="button" class="editMovie" id="edit-${pelicula.id}" value="${pelicula.id}">Edit</button>
             <button type="button" class="deleteMovie" id="delete-${pelicula.id}" value="${pelicula.id}">Delete</button>
@@ -66,13 +64,13 @@ function showData() {
 
     .then(() => {
 
-        let deleteButtons = document.querySelectorAll('.deleteMovie');
+        const deleteButtons = document.querySelectorAll('.deleteMovie');
         deleteButtons.forEach(button => {
         button.addEventListener('click', () => {
             crudMovie.deleteMovie(event)
         });
         })
-        let updateButtons = document.querySelectorAll('.editMovie');
+        const updateButtons = document.querySelectorAll('.editMovie');
         updateButtons.forEach(button => {
         button.addEventListener('click', () => {
            editMovie(event)
@@ -82,7 +80,6 @@ function showData() {
 
 }
 showData();
-export default showData;
 
 
 

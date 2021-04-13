@@ -4,7 +4,6 @@ export class Api {
 
     constructor() {
     this.url = 'http://localhost:3000/peliculas';
-    
     }
 
     async sendData() {
@@ -28,7 +27,6 @@ export class Api {
              'Content-Type': 'application/json'
             },
         });
-        //console.log('geoneData tu!', response.json());
         return response.json();
          
     }
@@ -36,7 +34,7 @@ export class Api {
  
     async postMovieData (movie) {
           
-        let movieBody = JSON.stringify({
+        const movieBody = JSON.stringify({
             'director': movie.directorInput,
             'title': movie.titleInput,
             'genre': movie.genreInput,
@@ -58,12 +56,12 @@ export class Api {
     deleteData (movieId) {
 
         const url = `${this.url}/${movieId}`;
-        var myHeaders = new Headers();
+        const myHeaders = new Headers();
         myHeaders.append("id", movieId);
 
-        var raw = "";
+        const raw = "";
 
-        var requestOptions = {
+        const requestOptions = {
         method: 'DELETE',
         headers: myHeaders,
         body: raw,
@@ -77,18 +75,18 @@ export class Api {
     }
 
     async updateData (movieId, movieData) {
-        var myHeaders = new Headers();
+        const myHeaders = new Headers();
         myHeaders.append("id", "movieId");
         myHeaders.append("Content-Type", "application/json");
         
-        var raw = JSON.stringify({
+        const raw = JSON.stringify({
             'director': movieData.directorInput,
             'title': movieData.titleInput,
             'genre': movieData.genreInput,
             'cover': movieData.coverInput,
         });
         
-        var requestOptions = {
+        const requestOptions = {
         method: 'PUT',
         headers: myHeaders,
         body: raw,
