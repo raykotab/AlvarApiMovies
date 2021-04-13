@@ -4,12 +4,52 @@ import {CrudMovie} from "./CrudMovie.js";
 
 const api = new Api;
 const crudMovie = new CrudMovie(api);
+//refactoring idea  createForm function with edit or add as argument
 
-const addForm = document.getElementById('addMovies');
-addForm.addEventListener('submit', () => {
+function createForm(formType, movie = undefined){
+
+    const sectionForm = document.getElementById('form');
+    
+    sectionForm.innerHTML = `
+    <form id="addMovies">
+        <button type="submit" id="Movie">Add a new one</button>
+        <input type="text" id="director" placeholder="director">
+        <input type="text" id="title" placeholder="title">
+        <input type="text" id="genre" placeholder="genre">
+        <input type="url" id="cover" placeholder="image url">
+    </form>`
+    const addForm = document.getElementById('addMovies');
+    console.log(addForm);
+    addForm.addEventListener('submit', () => {
     crudMovie.addMovie(event);
     showData();
+    sectionForm.innerHTML = "";
+    }); 
+    
+    //else 
+    /* <form id="editMovies">
+    <button type="submit" id="updateMovie">Update Movie</button>
+    <input type="hidden" id="${movie.id}">
+    <input type="text" id="newDirector" placeholder="director">
+    <input type="text" id="newTitle" placeholder="title">
+    <input type="text" id="newGenre" placeholder="genre">
+    <input type="url" id="newCover" placeholder="image url">
+    </form>*/
+    
+
+}
+
+const formShowButton = document.getElementById('addForm'); 
+formShowButton.addEventListener('click', () => {
+    createForm('addForm');
+    
 }); 
+
+// const addForm = document.getElementById('addMovies');
+// addForm.addEventListener('submit', () => {
+//     crudMovie.addMovie(event);
+//     showData();
+// }); 
 
 const editForm = document.getElementById('editMovies');
 editForm.addEventListener('submit', () => {

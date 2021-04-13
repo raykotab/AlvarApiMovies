@@ -31,7 +31,6 @@ export class Api {
          
     }
  
- 
     async postMovieData (movie) {
           
         const movieBody = JSON.stringify({
