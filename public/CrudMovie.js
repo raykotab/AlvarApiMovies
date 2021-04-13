@@ -8,7 +8,7 @@ export class CrudMovie {
     addMovie(event) {
 
         event.preventDefault();   
-       // console.log('estrind add');
+      
         const movie = {
             directorInput: document.querySelector('#director').value,
             titleInput: document.querySelector('#title').value,
@@ -17,21 +17,20 @@ export class CrudMovie {
         }
         this.api.postMovieData(movie)
         document.getElementById("addMovies").reset();
-        
     };
 
     deleteMovie(evt) {  
+
         const movieId = evt.target.value;
         const movieToDelete = document.querySelector(`#movieCard-${movieId}`)
-        //console.log(this.api);
         this.api.deleteData(movieId);
         movieToDelete.remove();
-        
     }; 
 
     updateMovie(event) {
 
         event.preventDefault();   
+
         const movieId = document.querySelector('#movieId').value;
         const movie = {
             directorInput: document.querySelector('#newDirector').value,
@@ -43,7 +42,6 @@ export class CrudMovie {
         document.getElementById("editMovies").reset();
         const editMovieForm = document.getElementById("editMovies");
         editMovieForm.style.display="none";
-        
         
     };
 }

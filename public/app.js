@@ -10,8 +10,8 @@ addForm.addEventListener('submit', () => {
     crudMovie.addMovie(event);
     showData();
 }); 
-const editForm = document.getElementById('editMovies');
 
+const editForm = document.getElementById('editMovies');
 editForm.addEventListener('submit', () => {
     crudMovie.updateMovie(event);
     showData();
@@ -29,7 +29,7 @@ async function editMovie(event) {
     const editMovieForm = document.getElementById("editMovies");
     addMovieForm.style.display = "none";
     editMovieForm.style.display="block";
-    console.log(oldData.id);
+    
     const oldDirector = document.getElementById("newDirector");
     oldDirector.value = oldData.director;
     const oldTitle = document.getElementById("newTitle");
@@ -84,7 +84,7 @@ function showData() {
 
 }
 showData();
-export default showData;
+
 
 
 
