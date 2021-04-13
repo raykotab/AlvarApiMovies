@@ -16,6 +16,7 @@ export class CrudMovie {
             coverInput: document.querySelector('#cover').value,
         }
         this.api.postMovieData(movie)
+        document.getElementById("addMovies").reset();
         
     };
 
@@ -39,7 +40,10 @@ export class CrudMovie {
             coverInput: document.querySelector('#newCover').value,
         }
         this.api.updateData(movieId, movie)
-        console.log("crud update", movieId);
+        document.getElementById("editMovies").reset();
+        const editMovieForm = document.getElementById("editMovies");
+        editMovieForm.style.display="none";
+        
         
     };
 }

@@ -46,6 +46,8 @@ function showData() {
     
     let receivedData = api.sendData();
     let seccionMovies = document.getElementById("peliculas");
+    const addMovieForm = document.getElementById("addMovies");
+    addMovieForm.style.display = "block";
     
     seccionMovies.innerHTML = "";
     receivedData.then(receivedData => {        
