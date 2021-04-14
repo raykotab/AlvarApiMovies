@@ -55,9 +55,9 @@ function showData() {
             
             seccionMovies.innerHTML += `
             <div class="movieCard" id="movieCard-${pelicula.id}">
-            <span id="movieTitle">` + pelicula.title + `</span><br/>
-            <span id="movieDirector">` + pelicula.director + `</span><br/>
-            <span id="movieGenre">` + pelicula.genre + `</span><br/>
+            <span id="movieTitle">${pelicula.title}</span><br/>
+            <span id="movieDirector">${pelicula.director}</span><br/>
+            <span id="movieGenre">${pelicula.genre}</span><br/>
             <img src="${pelicula.cover}" id="movieCover"><br/>
             <button type="button" class="editMovie" id="edit-${pelicula.id}" value="${pelicula.id}">Edit</button>
             <button type="button" class="deleteMovie" id="delete-${pelicula.id}" value="${pelicula.id}">Delete</button>

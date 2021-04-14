@@ -1,26 +1,30 @@
-# Api películas
+* CRUD in Vanilla Js for a list of favourite movies
 
-Crea con Postman un crud a la Api de películas
+This is a Bootcamp Exercise where we had to set up CRUD operations:
 
-## Instalación
+First with Postman, create the crud to the movies Api 
 
-- Instala en global el servidor de la Fake Api
+Then with Vanilla Javascript.
+
+## Requirements
+
+- Install the faker Api:
 
     sudo npm install -g json-server
 
-- Ejecuta el json
+- Execute the json
 
     json-server --watch peliculas.json
 
-- Instala Postman
+- Install Postman
 
     https://www.postman.com/
 
-- Crea un Crud en Postman
+- Create a Crud in Postman
 
-- Crea un crud en un frontend.
+- Create a Crud in Frontend
 
-    Utiliza una carpeta ./public/index.html para sustituir la página de inicio.
+    Use the folder ./public/index.html to replace the page to start
 
-- Modifica el Json a tu gusto y añade imágenes de portada de las películas
+- Modify the JSON and add pictures to the movies.
 
